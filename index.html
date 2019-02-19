@@ -8,12 +8,15 @@
 <body>
     <form action="students.php" method="get">
         <label for="prenom">Prenom</label>
-        <input type="text" name="prenom" id="prenom"/>
+        <input type="text" name="prenom" id="prenom" oninput="researchStudent(event, this.value)"/>
         <input type="submit" value="Valider" class="Valider" />
     </form>
     <br>
     <section id="students">
         <em>Noms des étudiants de la promotion DWMG1...</em>
+        <p>
+            <small>Fonctionne uniquement sur Google Chrome ou Chromium.</small>
+        </p>
     </section>
     <script src="main.js"></script>
 </body>
