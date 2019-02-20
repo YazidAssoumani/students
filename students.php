@@ -22,4 +22,3 @@ foreach ($students as $key => $student) {
 }
 
 ?>
-
