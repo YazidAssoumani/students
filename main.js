@@ -16,5 +16,5 @@ function researchStudent(event, val) {
     
         xhr.open("GET", url);
         xhr.send();
-    }    
+    }
 }
