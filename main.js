@@ -1,7 +1,8 @@
-function researchStudent(event, val) {
-    var inputEvent = event.inputType;
-    
-    var letter = val;
+function researchStudent(event, value) {
+    var inputEvent = event.inputType;    
+    var letters = value;
+    var url = 'students.php?';
+    var data = 'prenom=' + letters;
 
     var xhr = new XMLHttpRequest();
     
@@ -12,9 +13,8 @@ function researchStudent(event, val) {
             }
         };
 
-        var url = 'students.php?prenom=' + letter;
-    
-        xhr.open("GET", url);
-        xhr.send();
+        xhr.open("POST", url);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send(data);
     }
 }

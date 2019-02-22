@@ -6,7 +6,7 @@
     <title>Étudiants DWMG1</title>
 </head>
 <body>
-    <form action="students.php" method="get">
+    <form action="students.php" method="POST">
         <label for="prenom">Prenom</label>
         <input type="text" name="prenom" id="prenom" oninput="researchStudent(event, this.value)"/>
         <input type="submit" value="Valider" class="Valider" />
@@ -15,7 +15,7 @@
     <section id="students">
         <em>Noms des étudiants de la promotion DWMG1...</em>
         <p>
-            <small>Fonctionne uniquement sur Google Chrome ou Chromium.</small>
+            <small>Ne fonctionne actuellement pas sur Firefox et Internet Explorer.</small>
         </p>
     </section>
     <script src="main.js"></script>
